@@ -13,39 +13,39 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <div>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <img
-                      className="h-8 w-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
+                    <Link className="text-2xl" to="/">
+                    ERIDIUM
+                    </Link>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
                     
                           <Fragment>
                             {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                              Find Jobs
-                            </a>
-                            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">
-                              Comapny Reviews
-                            </a>
+                            
+                             <Link to="/findjobs" className="text-blue-900 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white">
+                             Find Jobs
+                             </Link>
+                            
+                            <Link to="" className="text-blue-900 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white">
+                              Find Projects
+                            </Link>
                           </Fragment>
                       
-                          <a
+                          <Link
                             
-                            href="#"
-                            className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                            to="#"
+                            className="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                           >
-                            Find Salaries
-                          </a>
+                            Post A Job
+                          </Link>
                         
                     </div>
                   </div>
@@ -88,15 +88,15 @@ export default function Navbar() {
                               {profile.map((item) => (
                                 <Menu.Item key={item}>
                                   {({ active }) => (
-                                    <a
-                                      href="#"
+                                    <Link
+                                      to=""
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
                                       )}
                                     >
                                       {item}
-                                    </a>
+                                    </Link>
                                   )}
                                 </Menu.Item>
                               ))}
@@ -125,18 +125,18 @@ export default function Navbar() {
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <Fragment >
                       {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                      <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
+                      <Link to="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">
                         View
-                      </a>
+                      </Link>
                     </Fragment>
                   
-                    <a
+                    <Link
                       
-                      href="#"
+                      to="#"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                     >JObs
                       
-                    </a>
+                    </Link>
                   
                 
               </div>
@@ -160,13 +160,13 @@ export default function Navbar() {
                 </div>
                 <div className="mt-3 px-2 space-y-1">
                   {profile.map((item) => (
-                    <a
+                    <Link
                       key={item}
-                      href="#"
+                      to="#"
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
                     >
                       {item}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

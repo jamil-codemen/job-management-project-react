@@ -1,6 +1,6 @@
 export default function Bye (){
     return(
-        <div>
+        <div className="">
             Bye boy
         </div>
     )
