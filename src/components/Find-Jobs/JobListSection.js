@@ -1,19 +1,35 @@
+import JobCard from "./job-card-component/JobCard"
 export default function JobListSection (){
     return(
-        <div className="container mx-auto md:px-8 px-4 md:mt-8">
+        <div className="container mx-auto md:px-8 px-4 py-4 md:mt-4">
+        <div className="flex flex-wrap flex-row justify-center mb-6">
+          <div className=" md:w-4/12 w-full">
+            <div className="">
+              <JobCard />
+            </div>
+          </div>
+          <div className="md:w-4/12 w-full">
+            <div className="">
+            <JobCard />
+            </div>
+          </div>
+          <div className="md:w-4/12 w-full">
+          <JobCard />
+          </div>
+        </div>
         <div className="flex flex-wrap flex-row justify-center">
-          <div className=" w-4/12">
-            <div className="flex rounded-lg">
-              1
+          <div className=" md:w-4/12 w-full">
+            <div className="">
+              <JobCard />
             </div>
           </div>
-          <div className="w-4/12">
-            <div className="flex rounded-lg md:mt-0">
-              2
+          <div className="md:w-4/12 w-full">
+            <div className="">
+            <JobCard />
             </div>
           </div>
-          <div className="w-4/12">
-            3
+          <div className="md:w-4/12 w-full">
+          <JobCard />
           </div>
         </div>
       </div>

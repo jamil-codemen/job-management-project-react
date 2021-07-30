@@ -46,6 +46,27 @@ export default function Navbar() {
                           >
                             Post A Job
                           </Link>
+                          <Link
+                            
+                            to="#"
+                            className="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                          >
+                            Training
+                          </Link>
+                          <Link
+                            
+                            to="#"
+                            className="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                          >
+                            Find Resources
+                          </Link>
+                          <Link
+                            
+                            to="#"
+                            className="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                          >
+                            Build Resume
+                          </Link>
                         
                     </div>
                   </div>
