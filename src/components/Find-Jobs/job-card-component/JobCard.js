@@ -1,6 +1,6 @@
 export default function JobCard() {
   return (
-    <div className="font-mono border border-gray-600 rounded-lg px-6 py-10 md:mr-2 md:mt-0 mt-2">
+    <div className="font-mono border border-gray-600 rounded-lg p-4">
       <div className="flex flex-wrap flex-row">
         <div className="w-10/12">
           <p className="text-xl font-bold hover:underline cursor-pointer">DevOps Cloud Engineer</p>
@@ -8,7 +8,7 @@ export default function JobCard() {
         <div className="w-2/12">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 hover:bg-blue-900 hover:text-white rounded-full "
+            className="h-6 w-6 hover:bg-blue-900 hover:text-white rounded-full "
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -31,7 +31,7 @@ export default function JobCard() {
             3.5
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
