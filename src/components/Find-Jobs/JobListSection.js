@@ -32,6 +32,7 @@ export default function JobListSection (){
           <JobCard />
           </div>
         </div>
+        <button className="btn-blue-inactive">Submit</button>
       </div>
     )
 }

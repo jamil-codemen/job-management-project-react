@@ -5,6 +5,7 @@ import FindJobs from "./pages/FindJobs";
 import Bye from "./pages/Bye";
 import Navbar from './components/Layout/Navbar';
 import JobDetailSection from './components/Find-Jobs/JobDetailSection';
+import ConnectUs from './pages/ConnectUs';
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
       <Route exact path="/findjobs"  component={FindJobs}/>
       <Route exact path="/jobdetail"  component={JobDetailSection}/>
   <Route exact path="/bye"  component={Bye}/>
+  <Route exact path="/connectus"  component={ConnectUs}/>
 
       </Switch>
     </div>

@@ -4,3 +4,5 @@ in both account just they will set the name of their profile name according to c
 
 4:In resources we will use udemy api for courses
 5:ignore the modal now use redirect to new page
+
+connect us page wil contain headless ui accordio

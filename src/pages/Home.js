@@ -1,4 +1,13 @@
-export default function Bye() {
+import React, { useEffect } from 'react';
+import { useHistory } from "react-router-dom";
+ const Home=()=> {
+  let history = useHistory();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      history.push("/findjobs");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
       <div className="flex items-center justify-center h-screen">
@@ -9,3 +18,4 @@ export default function Bye() {
     </div>
   );
 }
+export default Home
