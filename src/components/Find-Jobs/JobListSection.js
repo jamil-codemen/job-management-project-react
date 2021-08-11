@@ -32,7 +32,9 @@ export default function JobListSection (){
           <JobCard />
           </div>
         </div>
-        <button className="btn-blue-inactive">Submit</button>
+        <div className="flex justify-center">
+        <button className="btn-blue-inactive w-min ">More</button>
+        </div>
       </div>
     )
 }

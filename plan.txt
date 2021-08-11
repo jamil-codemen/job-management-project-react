@@ -6,3 +6,8 @@ in both account just they will set the name of their profile name according to c
 5:ignore the modal now use redirect to new page
 
 connect us page wil contain headless ui accordio
+
+
+love will add fvrt
+rating click will set rating
+

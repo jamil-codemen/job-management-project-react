@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 export default function JobDetail() {
   return (
     <div className="border-2 rounded-lg border-blue-400  p-4">
       <div className="flex flex-wrap flex-row justify-between my-4">
-        <div className="text-xl">
+        <div className="text-xl mb-4">
           <h1>DevOps Cloud Engineer </h1>
         </div>
         <div>
@@ -24,7 +25,7 @@ export default function JobDetail() {
         <div>
           <div className="flex flex-wrap flex-row">
             <div>
-              <p className="btn-blue-active">Apply Now</p>
+              <Link to="/applyjob" className="btn-blue-active">Apply Now</Link>
             </div>
           </div>
         </div>
@@ -71,7 +72,7 @@ export default function JobDetail() {
       </div>
       <div className="flex flex-wrap flex-row py-3">
         <div className="">
-          <button className="btn-blue-active">Go Back</button>
+          <Link to="/findjobs" className="btn-blue-active">Go Back</Link>
         </div>
       </div>
     </div>

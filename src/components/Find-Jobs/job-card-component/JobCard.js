@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 export default function JobCard() {
   return (
     <div className="font-mono border border-gray-600 rounded-lg p-4">
       <div className="flex flex-wrap flex-row">
         <div className="w-10/12">
-          <p className="text-xl font-bold hover:underline cursor-pointer">DevOps Cloud Engineer</p>
+          <Link to="/jobdetail" className="text-xl font-bold hover:underline cursor-pointer">DevOps Cloud Engineer</Link>
         </div>
         <div className="w-2/12">
           <svg

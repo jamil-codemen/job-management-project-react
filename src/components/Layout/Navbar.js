@@ -41,7 +41,7 @@ export default function Navbar() {
                       
                           <Link
                             
-                            to="/jobdetail"
+                            to=""
                             className="text-blue-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
                           >
                             Post A Job
@@ -104,7 +104,7 @@ export default function Navbar() {
                           >
                             <Menu.Items
                               static
-                              className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                              className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
                             >
                               {profile.map((item) => (
                                 <Menu.Item key={item}>

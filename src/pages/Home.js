@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
       history.push("/findjobs");
     }, 2000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [history]);
   return (
     <div className=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
       <div className="flex items-center justify-center h-screen">
