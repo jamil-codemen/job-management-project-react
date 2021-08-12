@@ -10,4 +10,6 @@ connect us page wil contain headless ui accordio
 
 love will add fvrt
 rating click will set rating
+in user data model add company name and job role
+
 
