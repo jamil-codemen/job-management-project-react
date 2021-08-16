@@ -83,13 +83,9 @@ export default function Navbar() {
                       {({ open }) => (
                         <>
                           <div>
-                            <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                            <Menu.Button className="max-w-xs rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                               <span className="sr-only">Open user menu</span>
-                              <img
-                                className="h-8 w-8 rounded-full"
-                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt=""
-                              />
+                             <p>hello</p>
                             </Menu.Button>
                           </div>
                           <Transition
@@ -106,8 +102,8 @@ export default function Navbar() {
                               static
                               className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
                             >
-                              {profile.map((item) => (
-                                <Menu.Item key={item}>
+                              
+                                <Menu.Item >
                                   {({ active }) => (
                                     <Link
                                       to=""
@@ -116,11 +112,26 @@ export default function Navbar() {
                                         'block px-4 py-2 text-sm text-gray-700'
                                       )}
                                     >
-                                      {item}
+                                     All
                                     </Link>
+                                    
                                   )}
                                 </Menu.Item>
-                              ))}
+                                <Menu.Item >
+                                  {({ active }) => (
+                                    <Link
+                                      to=""
+                                      className={classNames(
+                                        active ? 'bg-gray-100' : '',
+                                        'block px-4 py-2 text-sm text-gray-700'
+                                      )}
+                                    >
+                                     All
+                                    </Link>
+                                    
+                                  )}
+                                </Menu.Item>
+                              
                             </Menu.Items>
                           </Transition>
                         </>
@@ -155,7 +166,7 @@ export default function Navbar() {
                       
                       to="#"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >JObs
+                    >Jobs
                       
                     </Link>
                   
@@ -180,15 +191,15 @@ export default function Navbar() {
                   </button>
                 </div>
                 <div className="mt-3 px-2 space-y-1">
-                  {profile.map((item) => (
+                  
                     <Link
-                      key={item}
+                      
                       to="#"
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
                     >
-                      {item}
+                      All
                     </Link>
-                  ))}
+                  
                 </div>
               </div>
             </Disclosure.Panel>
