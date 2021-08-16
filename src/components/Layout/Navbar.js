@@ -3,9 +3,6 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
-
-const profile = ['Your Profile', 'Settings', 'Sign out']
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -83,9 +80,9 @@ export default function Navbar() {
                       {({ open }) => (
                         <>
                           <div>
-                            <Menu.Button className="max-w-xs rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                            <Menu.Button className="max-w-xs rounded-full flex items-center text-sm ">
                               <span className="sr-only">Open user menu</span>
-                             <p>hello</p>
+                             <p>Safayet Jamil</p>
                             </Menu.Button>
                           </div>
                           <Transition
@@ -106,13 +103,13 @@ export default function Navbar() {
                                 <Menu.Item >
                                   {({ active }) => (
                                     <Link
-                                      to=""
+                                      to="/user-dashboard"
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
                                       )}
                                     >
-                                     All
+                                     Dashboard
                                     </Link>
                                     
                                   )}
@@ -126,7 +123,7 @@ export default function Navbar() {
                                         'block px-4 py-2 text-sm text-gray-700'
                                       )}
                                     >
-                                     All
+                                     Sign Out
                                     </Link>
                                     
                                   )}

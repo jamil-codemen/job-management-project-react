@@ -8,6 +8,9 @@ import JobDetailSection from "./components/Find-Jobs/JobDetailSection";
 import ConnectUs from "./pages/ConnectUs";
 import ApplyJobForm from "./components/Find-Jobs/apply-component/ApplyJobForm";
 import Success from "./pages/Success";
+import Dashboard from "./pages/Dashboard";
+import AppliedJobs from "./components/User-Dashboard/apply-jobs/Applied-Jobs";
+import JobList from "./components/User-Dashboard/apply-jobs/JobList";
 function App() {
   return (
     <Router>
@@ -21,6 +24,10 @@ function App() {
           <Route exact path="/bye" component={Bye} />
           <Route exact path="/connectus" component={ConnectUs} />
           <Route exact path="/success" component={Success} />
+          <Route exact path="/user-dashboard" component={Dashboard} />
+          <Route exact path="/applied-jobs" component={AppliedJobs} />
+          <Route exact path="/applied-joblist" component={JobList} />
+          
         </Switch>
       </div>
     </Router>
